@@ -1,0 +1,31 @@
+/* layout */
+#main-wrap {
+    /* overflow to handle inner floating block */
+    overflow: hidden;
+}
+
+.divide-5 {
+    float: left;
+    width: 17%;
+    margin-right: 2%;
+}
+.divide-2 {
+    float: left;
+    width: 47%;
+    margin-right: 2%;
+}
+
+#content-wrap {
+    float: right;
+    width: 70%;
+}
+
+.discountText {
+    color: gray;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+a, u {
+    text-decoration: none;
+}
