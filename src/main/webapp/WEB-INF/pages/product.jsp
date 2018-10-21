@@ -166,3 +166,4 @@ margin-left: 15px;">Add to Cart</button></p>
 
 </body>
 </html>
+<%@ include file="footer.jsp"%>

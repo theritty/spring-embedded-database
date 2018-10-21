@@ -27,7 +27,7 @@ public class ReviewDaoImpl implements ReviewDao {
 		// Gets the reviews of the current product
 		Map<String, Object> params2 = new HashMap<>();
 		params2.put("product_id", id);
-        String sql2 = "SELECT reviews.text, customers.name FROM reviews " +
+        String sql2 = "SELECT reviews.id, reviews.text, customers.name FROM reviews " +
 				"INNER JOIN customers ON reviews.customer_id=customers.id " +
 				"WHERE reviews.product_id=:product_id ";
 		List<Review> result2 = namedParameterJdbcTemplate.query(sql2, params2,

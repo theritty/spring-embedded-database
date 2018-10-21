@@ -64,6 +64,7 @@ public class Mappers  {
 
 		public Review mapRow(ResultSet rs, int rowNum) throws SQLException {
 			Review review = new Review();
+			review.setId(rs.getInt("id"));
 			review.setText(rs.getString("text"));
 			review.setCustomer_name(rs.getString("name"));
 
